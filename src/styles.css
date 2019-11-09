@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  width: 340px;
+  position: relative;
+  z-index: 1;
+  border: 10px solid #318cf4;
+  padding: 13px 20px;
+}
+
+.screen::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/marshmallo-back.jpg");
+  opacity: 0.2;
+}
+
+.status-bar {
+  display: flex;
+  font-weight: bold;
+  font-size: 13px;
+  justify-content: space-between;
+  padding: 0px 5px;
+  margin-bottom: 22px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-size: 18px;
+  margin-bottom: 130px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .profile__avatar {
+  margin-bottom: 20px;
+}
+
+.profile__avatar img {
+  border-radius: 100%;
+}
+
+.main .profile__name {
+  font-size: 23px;
+  font-family: "McLaren", cursive;
+  font-weight: bold;
+  color: #318cf4;
+  margin-bottom: 15px;
+}
+
+.main .profile__legion {
+  opacity: 0.5;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.main .profile__button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.profile__button-box .button-box__column {
+  width: 131px;
+  height: 43px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 14px 0px gray;
+}
+
+.button-box__column span {
+  opacity: 0.5;
+}
+
+.profile__button-box .button-box__column2 {
+  width: 131px;
+  height: 43px;
+  background-color: #318cf4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 14px 0px gray;
+}
+
+.main .profile__description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-size: 15px;
+  padding: 0px 25px;
+  margin-bottom: 130px;
+}
+
+.profile__description .description__column,
+.profile__description .description__column2,
+.profile__description .description__column3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  width: 100%;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-line {
+  width: 41%;
+  height: 3px;
+  background-color: gray;
+  margin: 0 29%;
+  margin-bottom: -3%;
+  opacity: 0.5;
+}
